@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>Tugas07 lidiarorain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>Testimonials</h1>
+
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+                <div class="slide-row" id="slide">
+
+                    <!-- .Slide-Col -->
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Elon Lili is a dental student at Udaya University Bali. She has completed his undergraduate medical education and currently he is continuing his professional education to become a dentist</p>
+                            <h3>Elon</h3>
+                            <p>Doctor Profession.</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="img/user-1.jpg">
+                        </div>
+                    </div>
+
+                    <!-- /.Slide-Col -->
+
+                    <!-- .Slide-Col -->
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Wany Marlen is an Accounting Economics Student at Airlangga University, Surabaya. While carrying out his education he founded his Business in the field of Design & Fashion.</p>
+                            <h3>Wany</h3>
+                            <p>Desaign & Fashion.</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="img/user-2.jpg">
+                        </div>
+                    </div>
+
+                    <!-- /.Slide-Col -->
+
+                    <!-- .Slide-Col -->
+
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>Lidia Roor is a student majoring in information systems at the Jayapura University of Science and Technology. She is studying Web Programming From Basics along with the SaCode Community.</p>
+                            <h3>Lidia</h3>
+                            <p>SaCode Community</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="img/user-3.jpg">
+                        </div>
+                    </div>
+
+                    <!-- /Slide-Col -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        btn[1].onclick = function () {
+            slide.style.transform = "translateX(-800px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        btn[2].onclick = function () {
+            slide.style.transform = "translateX(-1600px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+        btn[3].onclick = function () {
+            slide.style.transform = "translateX(-2400px)";
+            for (i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
